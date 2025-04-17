@@ -6,11 +6,19 @@
     "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
+    "@types/node": "^22.14.1",
     "elysia": "latest",
+    "firebase-admin": "^13.2.0",
     "logestic": "^1.2.4"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "bun-types": "latest",
+    "@types/bun": "latest"
   },
-  "module": "src/index.js"
+  "module": "src/index.js",
+  "type": "module",
+  "private": true,
+  "peerDependencies": {
+    "typescript": "^5.8.3"
+  }
 }
